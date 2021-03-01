@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  margin: 0;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+:root {
+  --size101: 0.125 rem;
+  --size102: 0.25 rem;
+  --size103: 0.5 rem;
+  --size104: 0.75 rem;
+  --size105: 1 rem;
+  --size106: 1.25 rem;
+  --size107: 1.5 rem;
+  --size108: 1.75 rem;
+  --size109: 2 rem;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: lightblue;
+}
+
+#main header {
+  width: 100%;
+  height: 100%;
+  background: #e6e6e6;
+}
+
+#main header #logo {
+  float: left;
+}
+
+#main header #logo a img {
+  height: 30px;
+  width: 111px;
+  margin: 13px auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#content {
+  position: relative;
+  width: 95%;
+  margin: 0.5em auto;
+  min-height: 35em;
+  background: #e6e6e6;
+  color: #ff5619;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+}
+
+#footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  min-height: 10rem;
+  background: #e6e6e6;
+}
+
+#footer span#feet {
+  font-size: 0.7em;
+  display: inline-block;
+  position: absolute;
+  padding-top: 0.5em;
+}
+
+/* Consulta de medios */
+@media (max-width: 575.98px) {
+  #main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=index.css.map */
