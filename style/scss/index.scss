@@ -188,9 +188,9 @@ body {
     position: relative;
     min-height: 6rem;
     background: rgba(54, 50, 32, 0.849);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    //grid-template-columns: 1fr 1fr;
+    //grid-template-rows: auto;
     .footer-left {
       position: relative;
       margin: 0.5em;
@@ -198,6 +198,7 @@ body {
       margin-right: 0;
       display: flex;
       flex-direction: column;
+      flex-grow: 1;
 
       p {
         color: white;
@@ -216,6 +217,8 @@ body {
       margin-left: 0;
       display: flex;
       flex-direction: column;
+      flex-grow: 1;
+
       p {
         color: white;
         font-family: "Century Gothic", sans-serif;
@@ -224,7 +227,7 @@ body {
         // font-size: 1vw;
         padding: 0.5em;
         #ch-heart {
-          font-size: 2vw;
+          font-size: 5vmin;
           color: rgb(0, 204, 255);
         }
         #icon-git {
@@ -248,14 +251,21 @@ hr {
   border-color: rgba(190, 105, 34, 0.774);
 }
 /* Consulta de medios */
-@media (max-width: 600px) {
+@media (max-width: 575.98px) {
   #footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    // grid-template-columns: 1fr;
+    //grid-template-rows: auto;
+    flex-direction: column;
+    padding: 0;
     .footer-left {
-      border-bottom: 1px solid silver;
-      background: steelblue;
+      border-bottom: 1px solid rgb(95, 74, 16);
+      //background: steelblue;
+      margin: 0;
+    }
+    .footer-right {
+      // background: rgb(102, 155, 199);
+      margin: 0;
     }
   }
 }
