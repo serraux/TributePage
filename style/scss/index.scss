@@ -102,13 +102,13 @@ body {
       background: white;
       ul {
         list-style: none;
-        width: 95%;
+        width: 96%;
         position: relative;
         margin: 0 auto;
         padding: 0;
 
         .item-tribute {
-          background: rgb(230, 208, 129);
+          background: rgba(65, 50, 38, 0.863);
           border: 1px solid rgba(65, 50, 38, 0.863);
           margin-top: 0.2em;
           margin-bottom: 0.2em;
@@ -120,7 +120,7 @@ body {
           display: flex;
           align-items: stretch;
           .year {
-            background: rgba(65, 50, 38, 0.863);
+            background: rgba(190, 104, 34, 0.479);
             color: white;
             padding: 0.4em;
             display: block;
@@ -132,41 +132,105 @@ body {
             align-items: center;
             justify-content: center;
             margin: 1em;
-            border-radius: 2em;
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            -ms-border-radius: 2em;
-            -o-border-radius: 2em;
+            border-radius: 1em;
+            -webkit-border-radius: 1em;
+            -moz-border-radius: 1em;
+            -ms-border-radius: 1em;
+            -o-border-radius: 1em;
           }
           .tribute {
             background: honeydew;
-            padding: 0.2em;
+            padding: 0.4em;
             display: block;
             font-family: sans-serif;
             font-weight: 120;
             text-align: center;
+            font-style: oblique;
             font-size: 1.5vw;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-grow: 1;
+            border-bottom-right-radius: 0.5em;
+            border-top-right-radius: 0.5em;
           }
         }
       }
     }
+    #note-tribute {
+      padding: 2em;
+      background: white;
+      font-family: "Century Gothic", sans-serif;
+      font-weight: 80;
+      text-align: center;
+      font-size: 1.5vw;
+    }
+    #phrases-tribute {
+      color: white;
+      font-family: "Century Gothic", sans-serif;
+      font-weight: 200;
+      text-align: center;
+      font-size: 2vw;
+    }
+    .img-phrases {
+      position: relative;
+      width: 100%;
+      min-height: 200px;
+      background: rgb(226, 226, 226);
+    }
   }
-
+  #link {
+    text-align: center;
+    margin-bottom: 2em;
+  }
   #footer {
     width: 100%;
     position: relative;
-    bottom: 0;
-    text-align: center;
-    min-height: 10rem;
+    min-height: 6rem;
     background: rgba(54, 50, 32, 0.849);
-    span#feet {
-      font-size: 0.7em;
-      display: inline-block;
-      position: absolute;
-      padding-top: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .footer-left {
+      margin: 0.5em;
+      //background: rgba(102, 97, 73, 0.849);
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: white;
+        font-family: "Century Gothic", sans-serif;
+        font-weight: 200;
+        text-align: center;
+        font-size: 1vw;
+        padding: 0.5em;
+        border-right: 1px solid silver;
+      }
+    }
+    .footer-right {
+      margin: 0.5em;
+      //background: rgba(197, 185, 131, 0.849);
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      p {
+        color: white;
+        font-family: "Century Gothic", sans-serif;
+        font-weight: 200;
+        text-align: center;
+        font-size: 1vw;
+        padding: 0.5em;
+        #ch-heart {
+          font-size: 2vw;
+        }
+        #icon-git {
+          width: 20px;
+          height: auto;
+        }
+      }
+    }
+    :visited {
+      color: rgb(0, 204, 255);
     }
   }
 }
@@ -174,14 +238,12 @@ hr {
   border-color: rgba(190, 105, 34, 0.774);
 }
 /* Consulta de medios */
-@media (min-width: 575.98px) {
-  #title {
-    max-width: 100%;
-    text-align: center;
-  }
-  #sub-title {
-    max-width: 100%;
-
-    text-align: center;
+@media (max-width: 575.98px) {
+  #footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    .footer-left {
+      border-bottom: 1px solid silver;
+    }
   }
 }
