@@ -65,7 +65,7 @@ body {
       font-family: "Century Gothic", sans-serif;
       font-weight: 100;
       text-align: center;
-      font-size: 2.5vw;
+      font-size: 1;
     }
     #img-div {
       position: relative;
@@ -94,7 +94,7 @@ body {
         font-family: "Century Gothic", sans-serif;
         font-weight: 80;
         text-align: center;
-        font-size: 1.5vw;
+        // font-size: 1.5vw;
       }
     }
     #tribute-info {
@@ -127,7 +127,7 @@ body {
             font-family: "Century Gothic", sans-serif;
             font-weight: 80;
             text-align: center;
-            font-size: 1.5vw;
+            //font-size: 1.5vw;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -146,7 +146,7 @@ body {
             font-weight: 120;
             text-align: center;
             font-style: oblique;
-            font-size: 1.5vw;
+            // font-size: 1.5vw;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -163,14 +163,14 @@ body {
       font-family: "Century Gothic", sans-serif;
       font-weight: 80;
       text-align: center;
-      font-size: 1.5vw;
+      // font-size: 1.5vw;
     }
     #phrases-tribute {
       color: white;
       font-family: "Century Gothic", sans-serif;
       font-weight: 200;
       text-align: center;
-      font-size: 2vw;
+      //font-size: 2vw;
     }
     .img-phrases {
       position: relative;
@@ -190,7 +190,9 @@ body {
     background: rgba(54, 50, 32, 0.849);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     .footer-left {
+      position: relative;
       margin: 0.5em;
       //background: rgba(102, 97, 73, 0.849);
       margin-right: 0;
@@ -202,12 +204,13 @@ body {
         font-family: "Century Gothic", sans-serif;
         font-weight: 200;
         text-align: center;
-        font-size: 1vw;
+        //font-size: 1vw;
         padding: 0.5em;
         border-right: 1px solid silver;
       }
     }
     .footer-right {
+      position: relative;
       margin: 0.5em;
       //background: rgba(197, 185, 131, 0.849);
       margin-left: 0;
@@ -218,7 +221,7 @@ body {
         font-family: "Century Gothic", sans-serif;
         font-weight: 200;
         text-align: center;
-        font-size: 1vw;
+        // font-size: 1vw;
         padding: 0.5em;
         #ch-heart {
           font-size: 2vw;
@@ -245,12 +248,14 @@ hr {
   border-color: rgba(190, 105, 34, 0.774);
 }
 /* Consulta de medios */
-@media (max-width: 575.98px) {
+@media (max-width: 600px) {
   #footer {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     .footer-left {
       border-bottom: 1px solid silver;
+      background: steelblue;
     }
   }
 }
