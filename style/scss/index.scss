@@ -222,6 +222,7 @@ body {
         padding: 0.5em;
         #ch-heart {
           font-size: 2vw;
+          color: rgb(0, 204, 255);
         }
         #icon-git {
           width: 20px;
@@ -229,8 +230,14 @@ body {
         }
       }
     }
-    :visited {
-      color: rgb(0, 204, 255);
+    a:link {
+      color: rgb(243, 246, 247);
+    }
+    a:visited {
+      color: rgb(241, 244, 245);
+    }
+    a:hover {
+      background: steelblue;
     }
   }
 }

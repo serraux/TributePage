@@ -275,6 +275,7 @@ body {
 
 #main #footer .footer-right p #ch-heart {
   font-size: 2vw;
+  color: #00ccff;
 }
 
 #main #footer .footer-right p #icon-git {
@@ -282,8 +283,16 @@ body {
   height: auto;
 }
 
-#main #footer :visited {
-  color: #00ccff;
+#main #footer a:link {
+  color: #f3f6f7;
+}
+
+#main #footer a:visited {
+  color: #f1f4f5;
+}
+
+#main #footer a:hover {
+  background: steelblue;
 }
 
 hr {
