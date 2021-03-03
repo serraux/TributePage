@@ -76,6 +76,9 @@ body {
       margin-bottom: 1em;
 
       #image {
+        position: relative;
+        margin: 0 auto;
+        display: block;
         max-width: 80%;
         height: auto;
         box-shadow: 0 4px 8px rgba(241, 240, 240, 0.267),
@@ -177,6 +180,31 @@ body {
       width: 100%;
       min-height: 200px;
       background: rgb(226, 226, 226);
+      //padding-top: 0.5em;
+
+      background: rgba(31, 30, 30, 0.712);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      #cont1 {
+      }
+      .container-img-phrases {
+        max-width: 300px;
+        height: auto;
+        img {
+          position: relative;
+          display: block;
+          max-width: 95%;
+          height: auto;
+          padding: 0.5em;
+          background: inherit;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          box-shadow: 0 4px 8px rgba(241, 240, 240, 0.267),
+            0 2px 2px rgba(161, 159, 159, 0.507);
+        }
+      }
     }
   }
   #link {
@@ -262,10 +290,23 @@ hr {
       border-bottom: 1px solid rgb(95, 74, 16);
       //background: steelblue;
       margin: 0;
+      margin-bottom: 1.5em;
+      p {
+        border-right: 0px;
+      }
     }
     .footer-right {
       // background: rgb(102, 155, 199);
       margin: 0;
+    }
+  }
+  .img-phrases {
+    flex-direction: column;
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 0.5em;
     }
   }
 }
