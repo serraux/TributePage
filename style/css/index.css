@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
 * {
   margin: 0;
   margin: 0;
@@ -5,85 +6,213 @@
   font-family: sans-serif;
 }
 
-:root {
-  --size101: 0.125 rem;
-  --size102: 0.25 rem;
-  --size103: 0.5 rem;
-  --size104: 0.75 rem;
-  --size105: 1 rem;
-  --size106: 1.25 rem;
-  --size107: 1.5 rem;
-  --size108: 1.75 rem;
-  --size109: 2 rem;
-}
-
 body {
   font-family: sans-serif;
   width: 100%;
+  background: silver;
 }
 
 #main {
   position: relative;
   width: 100%;
-  height: 60px;
-  background: lightblue;
+  background: rgba(190, 105, 34, 0.774);
 }
 
 #main header {
+  position: fixed;
   width: 100%;
-  height: 100%;
-  background: #e6e6e6;
+  height: 2.9em;
+  background: rgba(190, 105, 34, 0.774);
+  top: 0;
+  z-index: 99;
 }
 
-#main header #logo {
-  float: left;
+#main header h1 {
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  padding: 0.8em;
+  color: #4cda4c73;
+  background: rgba(28, 29, 29, 0.774);
 }
 
-#main header #logo a img {
-  height: 30px;
-  width: 111px;
-  margin: 13px auto;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#content {
+#main #content {
   position: relative;
-  width: 95%;
-  margin: 0.5em auto;
-  min-height: 35em;
-  background: #e6e6e6;
-  color: #ff5619;
-  border-radius: 0.3em;
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  -ms-border-radius: 0.3em;
-  -o-border-radius: 0.3em;
+  width: 88%;
+  margin: 3em auto;
+  text-align: center;
+  background: rgba(28, 29, 29, 0.774);
+  border-radius: 0.2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
 }
 
-#footer {
+#main #content #title {
+  max-width: 100%;
+  color: white;
+  padding-top: 0.25em;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 5vw;
+}
+
+#main #content #sub-title {
+  max-width: 100%;
+  color: white;
+  padding-bottom: 0.4em;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+#main #content #img-div {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#main #content #img-div #image {
+  max-width: 80%;
+  height: auto;
+  -webkit-box-shadow: 0 4px 8px rgba(241, 240, 240, 0.267), 0 2px 3px rgba(161, 159, 159, 0.507);
+          box-shadow: 0 4px 8px rgba(241, 240, 240, 0.267), 0 2px 3px rgba(161, 159, 159, 0.507);
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+
+#main #content #img-div #img-caption {
+  position: relative;
+  margin: 0.8em auto;
+  width: 90%;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 80;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#main #content #tribute-info {
+  width: 100%;
+  background: white;
+}
+
+#main #content #tribute-info ul {
+  list-style: none;
+  width: 95%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#main #content #tribute-info ul .item-tribute {
+  background: #e6d081;
+  border: 1px solid rgba(65, 50, 38, 0.863);
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#main #content #tribute-info ul .item-tribute .year {
+  background: rgba(65, 50, 38, 0.863);
+  color: white;
+  padding: 0.4em;
+  display: block;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 80;
+  text-align: center;
+  font-size: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+
+#main #content #tribute-info ul .item-tribute .tribute {
+  background: honeydew;
+  padding: 0.2em;
+  display: block;
+  font-family: sans-serif;
+  font-weight: 120;
+  text-align: center;
+  font-size: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #footer {
   width: 100%;
   position: relative;
   bottom: 0;
   text-align: center;
   min-height: 10rem;
-  background: #e6e6e6;
+  background: rgba(54, 50, 32, 0.849);
 }
 
-#footer span#feet {
+#main #footer span#feet {
   font-size: 0.7em;
   display: inline-block;
   position: absolute;
   padding-top: 0.5em;
 }
 
+hr {
+  border-color: rgba(190, 105, 34, 0.774);
+}
+
 /* Consulta de medios */
-@media (max-width: 575.98px) {
-  #main {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+@media (min-width: 575.98px) {
+  #title {
+    max-width: 100%;
+    text-align: center;
+  }
+  #sub-title {
+    max-width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
