@@ -207,7 +207,7 @@ body {
 
 #main #content #imgphrases {
   width: 100%;
-  min-height: 100px;
+  height: auto;
   background: rgba(31, 30, 30, 0.712);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,7 +358,7 @@ hr {
   #footer .footer-right {
     margin: 0;
   }
-  #imgphrases {
+  #content #imgphrases {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -368,7 +368,10 @@ hr {
             flex-direction: row-reverse;
     background: steelblue;
   }
-  #imgphrases .container-img-phrases img {
+  #content #imgphrases .container-img-phrases {
+    background: steelblue;
+  }
+  #content #imgphrases .container-img-phrases img {
     max-width: 90%;
     height: auto;
     margin-top: 0.5em;

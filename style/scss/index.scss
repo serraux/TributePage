@@ -176,10 +176,8 @@ body {
       //font-size: 2vw;
     }
     #imgphrases {
-      //position: relative;
       width: 100%;
-      min-height: 100px;
-
+      height: auto;
       background: rgba(31, 30, 30, 0.712);
       display: flex;
       flex-direction: row;
@@ -300,11 +298,12 @@ hr {
       margin: 0;
     }
   }
-  #imgphrases {
+  #content #imgphrases {
     display: flex;
     flex-direction: row-reverse;
     background: steelblue;
     .container-img-phrases {
+      background: steelblue;
       img {
         max-width: 90%;
         height: auto;
