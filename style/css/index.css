@@ -376,4 +376,42 @@ hr {
     margin-top: 0.5em;
   }
 }
+
+.Border-Radius {
+  padding: 1em;
+  background: burlywood;
+}
+
+.Border-Radius .Border {
+  width: 200px;
+  height: 200px;
+  background: brown;
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+.Border-Radius #B1 {
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+
+.Border-Radius #B2 {
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+}
+
+.Border-Radius #B3 {
+  border-radius: 0.5em;
+  border-radius: 10.4em;
+  -webkit-border-radius: 10.4em;
+  -moz-border-radius: 10.4em;
+  -ms-border-radius: 10.4em;
+  -o-border-radius: 10.4em;
+}
 /*# sourceMappingURL=index.css.map */
